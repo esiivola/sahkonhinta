@@ -1,11 +1,12 @@
 import { useCallback, useLayoutEffect, useRef, useState } from "react";
 import type { Observation } from "../lib/types.ts";
+import type { Strings } from "../lib/i18n.ts";
 import { displayCents, formatCents } from "../lib/units.ts";
 import { makeScale, niceTicks } from "../lib/scale.ts";
 import { timeTicks } from "../lib/horizons.ts";
 import { toMs } from "../lib/time.ts";
 import { centerMs, indexAt } from "../lib/select.ts";
-import type { VatOpts } from "../lib/format.ts";
+import { priceText, type VatOpts } from "../lib/format.ts";
 
 interface Props {
   vis: Observation[];
@@ -13,9 +14,12 @@ interface Props {
   to: number;
   officialEndMs: number | null;
   nowMs: number;
+  currentPriceEurMWh: number | null;
   vat: VatOpts;
   activeMs: number;
   onSelect: (ms: number) => void;
+  s: Strings;
+  locale: string;
 }
 
 /** Build an SVG step path for a run of contiguous observations. */
@@ -40,9 +44,12 @@ export function PriceChart({
   to,
   officialEndMs,
   nowMs,
+  currentPriceEurMWh,
   vat,
   activeMs,
   onSelect,
+  s,
+  locale,
 }: Props) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const [w, setW] = useState(0);
@@ -90,7 +97,6 @@ export function PriceChart({
   );
 
   if (w === 0) {
-    // First paint before measurement; reserve height to avoid layout shift.
     return <div className="chart-wrap" ref={wrapRef} style={{ height: 300 }} />;
   }
 
@@ -125,23 +131,38 @@ export function PriceChart({
     if (last && last[0].type === o.type) last.push(o);
     else runs.push([o]);
   }
+  const hasOfficial = vis.some((o) => o.type === "official");
+  const hasForecast = vis.some((o) => o.type === "forecast");
 
   const step = yTicks.length > 1 ? yTicks[1] - yTicks[0] : 1;
   const yDec = step < 1 ? 2 : step < 5 ? 1 : 0;
 
-  const xTicks = timeTicks(from, to);
-  // Thin labels so neighbours never collide, based on real available width.
+  const xTicks = timeTicks(from, to, locale);
   const pxPerTick = (px1 - px0) / Math.max(1, xTicks.length);
   const labelEvery = Math.max(1, Math.ceil(50 / pxPerTick));
 
+  // Boundary only where it means something: both sources visible at once.
   const showBoundary =
-    officialEndMs !== null && officialEndMs > from && officialEndMs < to;
-  const bx = showBoundary ? x(officialEndMs!) : 0;
+    officialEndMs !== null &&
+    officialEndMs > from &&
+    officialEndMs < to &&
+    hasOfficial &&
+    hasForecast;
+  const bx = showBoundary ? x(officialEndMs) : 0;
+
   const showNow = nowMs > from && nowMs < to;
   const nx = showNow ? x(nowMs) : 0;
 
   const active = idx >= 0 ? vis[idx] : null;
   const clipId = "plot-clip";
+
+  // "now" tag: labels the current-time line with the live price.
+  const nowLabel =
+    currentPriceEurMWh !== null
+      ? `${s.nowShort} ${priceText(currentPriceEurMWh, vat, locale, 1)}`
+      : s.nowShort;
+  const tagW = nowLabel.length * 6.4 + 12;
+  const tagX = Math.min(Math.max(nx - tagW / 2, px0 + 1), px1 - tagW - 1);
 
   return (
     <div className="chart-wrap" ref={wrapRef}>
@@ -153,7 +174,7 @@ export function PriceChart({
         viewBox={`0 0 ${w} ${h}`}
         role="application"
         tabIndex={0}
-        aria-label="Electricity price over time. Use left and right arrow keys to move through prices."
+        aria-label={s.title}
         onKeyDown={onKeyDown}
         onPointerDown={(e) => {
           (e.target as Element).setPointerCapture?.(e.pointerId);
@@ -183,7 +204,7 @@ export function PriceChart({
                 className={isZero ? "grid-zero" : "grid"}
               />
               <text x={px0 - 6} y={gy + 3.5} className="tick-y">
-                {formatCents(t, yDec)}
+                {formatCents(t, yDec, locale)}
               </text>
             </g>
           );
@@ -240,25 +261,33 @@ export function PriceChart({
           ))}
         </g>
 
-        {/* boundary: OFFICIAL | FORECAST */}
+        {/* boundary: OFFICIAL | FORECAST (only when both are visible) */}
         {showBoundary && (
           <g>
             <line x1={bx} x2={bx} y1={py0} y2={py1} className="boundary" />
             <text x={bx - 5} y={py0 + 9} className="boundary-label" textAnchor="end">
-              OFFICIAL
+              {s.markerOfficial}
             </text>
             <text x={bx + 5} y={py0 + 9} className="boundary-label" textAnchor="start">
-              FORECAST
+              {s.markerForecast}
             </text>
           </g>
         )}
 
-        {/* now marker */}
+        {/* now marker + live price tag */}
         {showNow && (
           <g>
             <line x1={nx} x2={nx} y1={py0} y2={py1} className="now-line" />
-            <text x={nx} y={py1 - 4} className="now-label" textAnchor="middle">
-              now
+            <rect
+              x={tagX}
+              y={py0 + 2}
+              width={tagW}
+              height={16}
+              rx={8}
+              className="now-tag-bg"
+            />
+            <text x={tagX + tagW / 2} y={py0 + 13} className="now-tag" textAnchor="middle">
+              {nowLabel}
             </text>
           </g>
         )}
@@ -282,7 +311,7 @@ export function PriceChart({
           </g>
         )}
 
-        {/* axis baselines */}
+        {/* axis baseline */}
         <line x1={px0} x2={px1} y1={py1} y2={py1} className="axis" />
       </svg>
     </div>

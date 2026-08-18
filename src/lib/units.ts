@@ -42,12 +42,13 @@ export function displayCents(
 
 /**
  * Format a c/kWh number for display with tabular-friendly fixed decimals.
- * Negative prices keep their sign so the zero line stays meaningful.
+ * Locale-aware (Finnish uses a comma decimal). Negative prices keep their sign
+ * so the zero line stays meaningful.
  */
-export function formatCents(cents: number, decimals = 2): string {
+export function formatCents(cents: number, decimals = 2, locale = "en-GB"): string {
   // Avoid "-0.00"
   const v = Object.is(cents, -0) ? 0 : cents;
-  return v.toLocaleString("en-GB", {
+  return v.toLocaleString(locale, {
     minimumFractionDigits: decimals,
     maximumFractionDigits: decimals,
   });

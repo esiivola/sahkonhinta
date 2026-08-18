@@ -38,6 +38,16 @@ Internally everything is **EUR/MWh, VAT-excluded**. Presentation converts centra
 to **c/kWh** and applies **Finnish VAT (25.5%)** via a toggle whose state persists
 across visits. See [`src/lib/units.ts`](src/lib/units.ts).
 
+## Language & views
+
+- **Finnish by default**, with a **FI / EN** toggle (persisted). Language drives both
+  the strings ([`src/lib/i18n.ts`](src/lib/i18n.ts)) and locale-aware number/date
+  formatting (Finnish comma decimals, Finnish weekday/time).
+- Views are calendar-anchored: **Tänään / Huomenna / Viikko** (Today / Tomorrow /
+  Week). "Today" shows the whole day with a **now-line labelled with the live price**.
+  The `OFFICIAL │ FORECAST` boundary and legend appear only in the Week view, where
+  both sources are on screen.
+
 ## Local development
 
 ```bash

@@ -80,62 +80,53 @@ export function helsinkiDayRange(ms: number): { start: number; end: number } {
 
 // ---------- Formatting (all rendered in Helsinki local time) ----------
 
-const weekdayDayMonth = new Intl.DateTimeFormat("en-GB", {
-  timeZone: TZ,
-  weekday: "short",
-  day: "numeric",
-  month: "short",
-});
-const timeFmt = new Intl.DateTimeFormat("en-GB", {
-  timeZone: TZ,
-  hour: "2-digit",
-  minute: "2-digit",
-  hourCycle: "h23",
-});
-const monthYearFmt = new Intl.DateTimeFormat("en-GB", {
-  timeZone: TZ,
-  month: "long",
-  year: "numeric",
-});
-const dayMonthFmt = new Intl.DateTimeFormat("en-GB", {
-  timeZone: TZ,
-  day: "numeric",
-  month: "short",
-});
-const weekdayDayFmt = new Intl.DateTimeFormat("en-GB", {
-  timeZone: TZ,
-  weekday: "short",
-  day: "numeric",
-});
-
-/** e.g. "Tue 18 Aug" */
-export function fmtWeekdayDayMonth(ms: number): string {
-  return weekdayDayMonth.format(ms);
+// Locale-aware formatter cache. All formatters render in the Helsinki zone;
+// only the locale (weekday/month names, decimal + time separators) varies.
+const fmtCache = new Map<string, Intl.DateTimeFormat>();
+function getFmt(
+  locale: string,
+  kind: string,
+  opts: Intl.DateTimeFormatOptions,
+): Intl.DateTimeFormat {
+  const key = `${locale}|${kind}`;
+  let f = fmtCache.get(key);
+  if (!f) {
+    f = new Intl.DateTimeFormat(locale, { timeZone: TZ, ...opts });
+    fmtCache.set(key, f);
+  }
+  return f;
 }
 
-/** e.g. "18:15" */
-export function fmtTime(ms: number): string {
-  return timeFmt.format(ms);
+/** e.g. "Tue 18 Aug" / "ti 18. elok." */
+export function fmtWeekdayDayMonth(ms: number, locale: string): string {
+  return getFmt(locale, "wdm", {
+    weekday: "short",
+    day: "numeric",
+    month: "short",
+  }).format(ms);
 }
 
-/** e.g. "18 Aug" */
-export function fmtDayMonth(ms: number): string {
-  return dayMonthFmt.format(ms);
+/** e.g. "18:15" / "18.15" */
+export function fmtTime(ms: number, locale: string): string {
+  return getFmt(locale, "time", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23",
+  }).format(ms);
 }
 
-/** e.g. "Wed 19" — compact axis label for day boundaries */
-export function fmtWeekdayDay(ms: number): string {
-  return weekdayDayFmt.format(ms);
-}
-
-/** e.g. "October 2026" */
-export function fmtMonthYear(ms: number): string {
-  return monthYearFmt.format(ms);
+/** e.g. "Wed 19" / "ke 19" — compact axis label for day boundaries */
+export function fmtWeekdayDay(ms: number, locale: string): string {
+  return getFmt(locale, "wd", { weekday: "short", day: "numeric" }).format(ms);
 }
 
 /** e.g. "18:15–18:30" (interval within, typically, one day) */
-export function fmtInterval(startMs: number, endMs: number): string {
-  return `${fmtTime(startMs)}–${fmtTime(endMs)}`;
+export function fmtInterval(
+  startMs: number,
+  endMs: number,
+  locale: string,
+): string {
+  return `${fmtTime(startMs, locale)}–${fmtTime(endMs, locale)}`;
 }
 
 export function toMs(iso: string): number {
