@@ -1,0 +1,500 @@
+/* ============================================================
+   Design tokens — warm off-white, dark green-black ink,
+   one restrained teal accent reserved for UI chrome only.
+   Chart data is drawn in ink (solid = official, dashed = forecast)
+   so sources are never distinguished by color alone.
+   ============================================================ */
+:root {
+  /* Surface / ink */
+  --bg: #f6f4ef;
+  --surface: #fffdf9;
+  --ink: #19201c; /* primary text, official line, axes */
+  --ink-2: #464e48; /* secondary text (AA on --bg) */
+  --ink-3: #5f665f; /* labels, ticks, captions (AA on --bg for small text) */
+  --hairline: #e2ded4; /* thin borders */
+  --grid: #e8e4da; /* chart gridlines */
+  --grid-strong: #c9c3b5; /* zero line, axis baseline */
+
+  /* One restrained accent — UI chrome only (never encodes data) */
+  --accent: #1c6b5a;
+  --accent-weak: #e4ede9;
+  --accent-ink: #0f4e40; /* accent text meeting AA on --bg */
+
+  /* Semantic */
+  --negative: #9a3b2f; /* below-zero price emphasis (with label, not color alone) */
+  --focus: #1c6b5a;
+
+  /* Typography */
+  --font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    "Segoe UI", Roboto, sans-serif;
+  --num: "Helvetica Neue", Arial, sans-serif;
+
+  /* Spacing scale */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+
+  /* Radius */
+  --r-1: 6px;
+  --r-2: 10px;
+  --r-pill: 999px;
+
+  --tap: 44px; /* minimum touch target */
+  --maxw: 760px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Tabular, aligned numerals wherever numbers matter */
+.num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  letter-spacing: -0.01em;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--accent-ink);
+  text-underline-offset: 2px;
+}
+
+/* Visible focus for keyboard users only */
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: var(--r-1);
+}
+
+/* ---------- Layout ---------- */
+.app {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: max(var(--s-4), env(safe-area-inset-top)) var(--s-4)
+    calc(var(--s-6) + env(safe-area-inset-bottom));
+}
+
+.site-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-3);
+  padding-top: var(--s-2);
+  padding-bottom: var(--s-4);
+}
+.site-head h1 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.site-head .sub {
+  color: var(--ink-3);
+  font-size: 0.8rem;
+}
+
+/* ---------- Header stat tiles ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s-3);
+  margin-bottom: var(--s-5);
+}
+@media (min-width: 480px) {
+  .stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tile {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-2);
+  padding: var(--s-4);
+}
+.tile.lead {
+  border-color: var(--accent);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+.tile .label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.tile .value {
+  margin-top: var(--s-1);
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.05;
+}
+.tile.lead .value {
+  font-size: 2.4rem;
+}
+.tile .unit {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink-2);
+  margin-left: 4px;
+}
+.tile .meta {
+  margin-top: 2px;
+  font-size: 0.78rem;
+  color: var(--ink-3);
+}
+
+/* ---------- Badges (source labels) ---------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 7px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--hairline);
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+.badge::before {
+  content: "";
+  width: 14px;
+  height: 0;
+  border-top: 2px solid var(--ink);
+}
+.badge.official::before {
+  border-top-style: solid;
+}
+.badge.forecast::before {
+  border-top-style: dashed;
+}
+
+/* ---------- Segmented control (horizons) & toggles ---------- */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+  margin-bottom: var(--s-3);
+}
+
+.segmented {
+  display: inline-flex;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-pill);
+  padding: 3px;
+  gap: 2px;
+}
+.segmented button {
+  min-height: 44px;
+  min-width: 48px;
+  padding: 0 var(--s-4);
+  border: 0;
+  border-radius: var(--r-pill);
+  background: transparent;
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.segmented button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--surface);
+}
+
+.vat-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: var(--tap);
+}
+.vat-toggle .switch {
+  appearance: none;
+  width: 44px;
+  height: 26px;
+  border-radius: var(--r-pill);
+  background: var(--grid-strong);
+  border: 1px solid var(--hairline);
+  position: relative;
+  cursor: pointer;
+  flex: none;
+  transition: background 0.12s ease;
+}
+.vat-toggle .switch::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  transition: transform 0.12s ease;
+}
+.vat-toggle .switch:checked {
+  background: var(--accent);
+}
+.vat-toggle .switch:checked::after {
+  transform: translateX(18px);
+}
+.vat-toggle label {
+  font-size: 0.85rem;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+
+/* ---------- Chart ---------- */
+.chart-card {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-2);
+  padding: var(--s-3) var(--s-2) var(--s-2);
+  margin-bottom: var(--s-4);
+}
+.chart-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.chart-svg:focus {
+  outline: none;
+}
+.chart-svg:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: var(--r-1);
+}
+.chart-wrap {
+  width: 100%;
+}
+
+/* Gridlines & axes */
+.chart-svg .grid {
+  stroke: var(--grid);
+  stroke-width: 1;
+}
+.chart-svg .grid-major {
+  stroke: var(--grid-strong);
+  stroke-width: 1;
+}
+.chart-svg .grid-zero {
+  stroke: var(--grid-strong);
+  stroke-width: 1.5;
+}
+.chart-svg .axis {
+  stroke: var(--grid-strong);
+  stroke-width: 1;
+}
+
+/* Tick labels */
+.chart-svg .tick-y,
+.chart-svg .tick-x {
+  fill: var(--ink-3);
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+}
+.chart-svg .tick-y {
+  text-anchor: end;
+}
+.chart-svg .tick-x {
+  text-anchor: middle;
+}
+.chart-svg .tick-x.major {
+  fill: var(--ink-2);
+  font-weight: 600;
+}
+
+/* Price lines — sources distinguished by style, never color alone */
+.chart-svg .line-official,
+.chart-svg .line-forecast {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.chart-svg .line-forecast {
+  stroke-dasharray: 6 5;
+  stroke-width: 1.9;
+}
+
+/* Source boundary */
+.chart-svg .boundary {
+  stroke: var(--ink-2);
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+}
+.chart-svg .boundary-label {
+  fill: var(--ink-3);
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* Now marker */
+.chart-svg .now-line {
+  stroke: var(--accent);
+  stroke-width: 1.5;
+}
+.chart-svg .now-label {
+  fill: var(--accent-ink);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* Selection */
+.chart-svg .active-band {
+  fill: var(--accent-weak);
+}
+.chart-svg .cursor-line {
+  stroke: var(--accent);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+  opacity: 0.7;
+}
+.chart-svg .cursor-dot {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+
+/* Legend — direct key for line styles (redundant with boundary labels) */
+.legend {
+  display: flex;
+  gap: var(--s-4);
+  padding: var(--s-1) var(--s-1) 0;
+  font-size: 0.78rem;
+  color: var(--ink-2);
+}
+.legend .key {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.legend svg line {
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+.legend svg line.line-forecast {
+  stroke-dasharray: 5 4;
+}
+
+/* Readout */
+.readout {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-4);
+  padding: var(--s-3) var(--s-1) var(--s-1);
+  min-height: 52px;
+}
+.readout .when {
+  font-size: 0.9rem;
+  color: var(--ink-2);
+  font-weight: 600;
+}
+.readout .price {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+.readout .price .unit {
+  font-size: 0.85rem;
+  color: var(--ink-2);
+  font-weight: 500;
+  margin-left: 3px;
+}
+.readout .interval {
+  font-size: 0.8rem;
+  color: var(--ink-3);
+}
+.readout .hint {
+  color: var(--ink-3);
+  font-size: 0.85rem;
+}
+
+/* ---------- Footer ---------- */
+.site-foot {
+  margin-top: var(--s-6);
+  padding-top: var(--s-4);
+  border-top: 1px solid var(--hairline);
+  color: var(--ink-3);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.site-foot p {
+  margin: 0 0 var(--s-3);
+}
+.site-foot a {
+  color: var(--accent-ink);
+}
+.site-foot .updated {
+  color: var(--ink-2);
+  font-weight: 600;
+}
+
+/* ---------- States ---------- */
+.state {
+  padding: var(--s-7) var(--s-4);
+  text-align: center;
+  color: var(--ink-3);
+}
+.state.error {
+  color: var(--negative);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

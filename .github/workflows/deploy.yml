@@ -1,0 +1,72 @@
+name: Build data & deploy
+
+on:
+  # Refresh a few times a day: after the ~12:45 CET day-ahead publication and to
+  # pick up forecast refreshes. Cron is UTC and may be delayed by GitHub.
+  schedule:
+    - cron: "0 4,11,13,17 * * *"
+  # Rebuild on code changes, but ignore the bot's own data commits to avoid loops.
+  push:
+    branches: [main]
+    paths-ignore:
+      - "public/data/**"
+  workflow_dispatch:
+
+# Allow committing refreshed data back, and deploying to Pages.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Never run two deploys at once; let a newer run supersede an in-flight one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+
+      # Fetch → merge accumulated store → resolve → write public/data/*.json.
+      # ENTSO_E_TOKEN is optional; the pipeline runs fully without it.
+      - name: Build data
+        env:
+          ENTSO_E_TOKEN: ${{ secrets.ENTSO_E_TOKEN }}
+        run: npm run build:data
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "data: refresh prices [skip ci]"
+            git push
+          fi
+
+      - name: Build site
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
