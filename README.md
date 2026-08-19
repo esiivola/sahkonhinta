@@ -47,6 +47,10 @@ across visits. See [`src/lib/units.ts`](src/lib/units.ts).
   Week). "Today" shows the whole day with a **now-line labelled with the live price**.
   The `OFFICIAL │ FORECAST` boundary and legend appear only in the Week view, where
   both sources are on screen.
+- The top is a newspaper-style **hero price + one summary line** (average, plus
+  cheapest/priciest times and tomorrow's level) — no boxed stat cards. Source
+  attribution and the site-maker credit live behind the header **(i) dialog**
+  ([`src/components/InfoDialog.tsx`](src/components/InfoDialog.tsx)).
 
 ## Local development
 

@@ -5,13 +5,13 @@ import { toMs } from "./lib/time.ts";
 import { obsAt } from "./lib/select.ts";
 import { LOCALE, type Lang, strings } from "./lib/i18n.ts";
 import type { VatOpts } from "./lib/format.ts";
-import { PriceHeader } from "./components/PriceHeader.tsx";
+import { PriceSummary } from "./components/PriceSummary.tsx";
 import { PriceChart } from "./components/PriceChart.tsx";
 import { HorizonSelector } from "./components/HorizonSelector.tsx";
 import { VatToggle } from "./components/VatToggle.tsx";
 import { LanguageToggle } from "./components/LanguageToggle.tsx";
 import { Readout } from "./components/Readout.tsx";
-import { Footer } from "./components/Footer.tsx";
+import { InfoDialog } from "./components/InfoDialog.tsx";
 
 const VAT_KEY = "sahkonhinta.vatIncluded";
 const LANG_KEY = "sahkonhinta.lang";
@@ -29,6 +29,7 @@ export function App() {
   const [nowMs, setNowMs] = useState<number>(() => Date.now());
   const [activeMs, setActiveMs] = useState<number>(() => Date.now());
   const [userSelected, setUserSelected] = useState(false);
+  const [infoOpen, setInfoOpen] = useState(false);
 
   useEffect(() => {
     localStorage.setItem(VAT_KEY, String(vatIncluded));
@@ -39,7 +40,6 @@ export function App() {
     document.documentElement.lang = lang;
   }, [lang]);
 
-  // Keep "now" live so the marker and current price track the real clock.
   useEffect(() => {
     const id = setInterval(() => setNowMs(Date.now()), 60_000);
     return () => clearInterval(id);
@@ -70,7 +70,22 @@ export function App() {
     const showLegend =
       vis.some((o) => o.type === "official") &&
       vis.some((o) => o.type === "forecast");
-    return { obs, win, vis, officialEndMs, livePriceNow, showLegend };
+
+    // Tomorrow's average, computed relative to the real clock (not generation
+    // time) so it stays correct across a midnight rollover between refreshes.
+    const tWin = windowFor("tomorrow", nowMs, dataStart, dataEnd);
+    const tObs = obs.filter(
+      (o) => toMs(o.start) < tWin.to && toMs(o.end) > tWin.from,
+    );
+    const tomorrow = tObs.length
+      ? {
+          avgEurMWh:
+            tObs.reduce((sum, o) => sum + o.priceEurMWh, 0) / tObs.length,
+          official: tObs.every((o) => o.type === "official"),
+        }
+      : null;
+
+    return { obs, win, vis, officialEndMs, livePriceNow, showLegend, tomorrow };
   }, [data, horizon, nowMs]);
 
   if (loading) {
@@ -90,24 +105,37 @@ export function App() {
 
   const effectiveActiveMs = userSelected ? activeMs : nowMs;
   const activeObs = obsAt(view.vis, effectiveActiveMs);
-  const headerStatus = {
-    ...data.status,
-    currentPriceEurMWh: view.livePriceNow ?? data.status.currentPriceEurMWh,
-  };
+  const currentPrice = view.livePriceNow ?? data.status.currentPriceEurMWh;
 
   return (
     <main className="app">
       <header className="site-head">
-        <div className="head-titles">
-          <h1>
-            {s.title} <span className="sub">· {s.region}</span>
-          </h1>
-          <span className="sub">{s.subtitle}</span>
+        <h1>
+          {s.title} <span className="sub">· {s.region}</span>
+        </h1>
+        <div className="head-actions">
+          <LanguageToggle lang={lang} onChange={setLang} />
+          <button
+            type="button"
+            className="info-btn"
+            aria-label={s.infoAria}
+            aria-haspopup="dialog"
+            onClick={() => setInfoOpen(true)}
+          >
+            i
+          </button>
         </div>
-        <LanguageToggle lang={lang} onChange={setLang} />
       </header>
 
-      <PriceHeader status={headerStatus} vat={vat} s={s} locale={locale} />
+      <PriceSummary
+        currentPriceEurMWh={currentPrice}
+        vis={view.vis}
+        horizon={horizon}
+        tomorrow={view.tomorrow}
+        vat={vat}
+        s={s}
+        locale={locale}
+      />
 
       <div className="controls">
         <HorizonSelector value={horizon} onChange={setHorizon} s={s} />
@@ -150,7 +178,14 @@ export function App() {
         <Readout obs={activeObs} vat={vat} s={s} locale={locale} />
       </div>
 
-      <Footer status={data.status} lang={lang} locale={locale} />
+      <InfoDialog
+        open={infoOpen}
+        onClose={() => setInfoOpen(false)}
+        status={data.status}
+        lang={lang}
+        locale={locale}
+        s={s}
+      />
     </main>
   );
 }
