@@ -55,9 +55,12 @@ export function PriceChart({
   useLayoutEffect(() => {
     const el = wrapRef.current;
     if (!el) return;
+    // Measure synchronously on mount so the chart never renders blank while
+    // waiting for the first (async) ResizeObserver callback.
+    setW(Math.round(el.getBoundingClientRect().width));
     const ro = new ResizeObserver((entries) => {
       const cw = entries[0]?.contentRect.width ?? 0;
-      setW(Math.round(cw));
+      if (cw > 0) setW(Math.round(cw));
     });
     ro.observe(el);
     return () => ro.disconnect();
