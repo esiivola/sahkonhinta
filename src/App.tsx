@@ -62,11 +62,10 @@ export function App() {
     const vis = obs.filter(
       (o) => toMs(o.start) < win.to && toMs(o.end) > win.from,
     );
-    const livePriceNow = obsAt(obs, nowMs)?.priceEurMWh ?? null;
     const showLegend =
       vis.some((o) => o.type === "official") &&
       vis.some((o) => o.type === "forecast");
-    return { obs, win, vis, livePriceNow, showLegend };
+    return { obs, win, vis, showLegend };
   }, [data, horizon, nowMs]);
 
   if (loading) {
@@ -118,7 +117,6 @@ export function App() {
           from={view.win.from}
           to={view.win.to}
           nowMs={nowMs}
-          currentPriceEurMWh={view.livePriceNow}
           vat={vat}
           activeMs={effectiveActiveMs}
           onSelect={(ms) => {

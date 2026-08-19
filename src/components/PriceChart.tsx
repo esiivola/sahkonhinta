@@ -6,14 +6,13 @@ import { makeScale, niceTicks } from "../lib/scale.ts";
 import { timeTicks } from "../lib/horizons.ts";
 import { toMs } from "../lib/time.ts";
 import { centerMs, indexAt } from "../lib/select.ts";
-import { priceText, type VatOpts } from "../lib/format.ts";
+import type { VatOpts } from "../lib/format.ts";
 
 interface Props {
   vis: Observation[];
   from: number;
   to: number;
   nowMs: number;
-  currentPriceEurMWh: number | null;
   vat: VatOpts;
   activeMs: number;
   onSelect: (ms: number) => void;
@@ -42,7 +41,6 @@ export function PriceChart({
   from,
   to,
   nowMs,
-  currentPriceEurMWh,
   vat,
   activeMs,
   onSelect,
@@ -112,15 +110,12 @@ export function PriceChart({
   const values = vis.map(dv);
   const rawMax = values.length ? Math.max(...values) : 1;
   const rawMin = values.length ? Math.min(...values) : 0;
-  let dMin = Math.min(0, rawMin);
-  let dMax = rawMax;
-  const pad = (dMax - dMin) * 0.08 || 1;
-  dMax += pad;
-  if (rawMin < 0) dMin -= pad;
-
-  const yTicks = niceTicks(dMin, dMax, 5);
-  dMin = Math.min(dMin, yTicks[0]);
-  dMax = Math.max(dMax, yTicks[yTicks.length - 1]);
+  // Honest zero baseline for positive data; include negatives when present.
+  // No large top headroom now that nothing is drawn inside the plot top; the
+  // tick step hugs the peak so the line fills the height cleanly.
+  const yTicks = niceTicks(rawMin < 0 ? rawMin : 0, rawMax, 5);
+  const dMin = yTicks[0];
+  const dMax = yTicks[yTicks.length - 1];
 
   const x = makeScale(from, to, px0, px1);
   const y = makeScale(dMin, dMax, py1, py0);
@@ -147,14 +142,6 @@ export function PriceChart({
 
   const active = idx >= 0 ? vis[idx] : null;
   const clipId = "plot-clip";
-
-  // "now" tag: labels the current-time line with the live price.
-  const nowLabel =
-    currentPriceEurMWh !== null
-      ? `${s.nowShort} ${priceText(currentPriceEurMWh, vat, locale, 1)}`
-      : s.nowShort;
-  const tagW = nowLabel.length * 6.4 + 12;
-  const tagX = Math.min(Math.max(nx - tagW / 2, px0 + 1), px1 - tagW - 1);
 
   return (
     <div className="chart-wrap" ref={wrapRef}>
@@ -253,22 +240,9 @@ export function PriceChart({
           ))}
         </g>
 
-        {/* now marker + live price tag */}
+        {/* now marker: a bare vertical line at the current time */}
         {showNow && (
-          <g>
-            <line x1={nx} x2={nx} y1={py0} y2={py1} className="now-line" />
-            <rect
-              x={tagX}
-              y={py0 + 2}
-              width={tagW}
-              height={16}
-              rx={8}
-              className="now-tag-bg"
-            />
-            <text x={tagX + tagW / 2} y={py0 + 13} className="now-tag" textAnchor="middle">
-              {nowLabel}
-            </text>
-          </g>
+          <line x1={nx} x2={nx} y1={py0} y2={py1} className="now-line" />
         )}
 
         {/* selection cursor + dot */}
@@ -297,5 +271,5 @@ export function PriceChart({
   );
 }
 
-const MARGIN = { l: 38, r: 14, t: 20, b: 30 };
+const MARGIN = { l: 38, r: 14, t: 14, b: 30 };
 const plotW = (w: number) => w - MARGIN.l - MARGIN.r;

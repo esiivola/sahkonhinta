@@ -33,8 +33,10 @@ function niceNum(range: number, round: boolean): number {
 }
 
 /**
- * "Nice" evenly-spaced tick values covering [min, max]. Always includes a tick
- * at 0 when the domain crosses it, so the zero line is identifiable.
+ * "Nice" evenly-spaced tick values covering [min, max]. The step is derived
+ * directly from the target count so the axis hugs the data (the top tick sits
+ * just above the peak) rather than over-extending to the next decade. Always
+ * includes a tick at 0 when the domain crosses it, so the zero line is clear.
  */
 export function niceTicks(min: number, max: number, count = 5): number[] {
   if (min === max) {
@@ -42,8 +44,7 @@ export function niceTicks(min: number, max: number, count = 5): number[] {
     min -= pad;
     max += pad;
   }
-  const range = niceNum(max - min, false);
-  const step = niceNum(range / Math.max(1, count - 1), true);
+  const step = niceNum((max - min) / Math.max(1, count), true);
   const start = Math.floor(min / step) * step;
   const end = Math.ceil(max / step) * step;
   const ticks: number[] = [];

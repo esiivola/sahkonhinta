@@ -399,33 +399,10 @@ a {
   stroke-width: 1.9;
 }
 
-/* Source boundary */
-.chart-svg .boundary {
-  stroke: var(--ink-2);
-  stroke-width: 1;
-  stroke-dasharray: 2 3;
-}
-.chart-svg .boundary-label {
-  fill: var(--ink-3);
-  font-size: 8.5px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
-/* Now marker */
+/* Now marker: a bare vertical line at the current time */
 .chart-svg .now-line {
   stroke: var(--accent);
   stroke-width: 1.5;
-}
-.chart-svg .now-tag-bg {
-  fill: var(--accent);
-}
-.chart-svg .now-tag {
-  fill: #ffffff;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  font-variant-numeric: tabular-nums;
 }
 
 /* Selection */
@@ -444,7 +421,7 @@ a {
   stroke-width: 2;
 }
 
-/* Legend - direct key for line styles (redundant with boundary labels) */
+/* Legend - direct key for the solid (official) vs dashed (forecast) styles */
 .legend {
   display: flex;
   gap: var(--s-4);
