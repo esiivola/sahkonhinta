@@ -69,6 +69,13 @@ export interface Strings {
 
   loading: string;
   error: string;
+
+  // Screen-reader-only summary (visually hidden; gives AT users and crawlers
+  // the actual figures the chart draws).
+  srIntro: string;
+  srNow: (price: string, vatText: string) => string;
+  srToday: (avg: string) => string;
+  srTomorrow: (avg: string, official: boolean) => string;
 }
 
 const fi: Strings = {
@@ -125,6 +132,12 @@ const fi: Strings = {
 
   loading: "Ladataan hintoja…",
   error: "Hintatietoja ei voitu ladata. Yritä myöhemmin uudelleen.",
+
+  srIntro: "Sähkön pörssihinta Suomessa.",
+  srNow: (price, vatText) => `Hinta nyt ${price} snt/kWh (${vatText}).`,
+  srToday: (avg) => `Tänään keskihinta ${avg} snt/kWh.`,
+  srTomorrow: (avg, official) =>
+    `Huomenna keskihinta ${avg} snt/kWh (${official ? "vahvistettu" : "ennuste"}).`,
 };
 
 const en: Strings = {
@@ -181,6 +194,12 @@ const en: Strings = {
 
   loading: "Loading prices…",
   error: "Could not load price data. Please try again later.",
+
+  srIntro: "Finnish day-ahead electricity price.",
+  srNow: (price, vatText) => `Price now ${price} c/kWh (${vatText}).`,
+  srToday: (avg) => `Today's average ${avg} c/kWh.`,
+  srTomorrow: (avg, official) =>
+    `Tomorrow's average ${avg} c/kWh (${official ? "confirmed" : "forecast"}).`,
 };
 
 const STRINGS: Record<Lang, Strings> = { fi, en };

@@ -4,7 +4,7 @@ import { type HorizonKey, windowFor } from "./lib/horizons.ts";
 import { toMs } from "./lib/time.ts";
 import { obsAt } from "./lib/select.ts";
 import { LOCALE, type Lang, strings } from "./lib/i18n.ts";
-import type { VatOpts } from "./lib/format.ts";
+import { priceText, type VatOpts } from "./lib/format.ts";
 import { PriceChart } from "./components/PriceChart.tsx";
 import { HorizonSelector } from "./components/HorizonSelector.tsx";
 import { VatToggle } from "./components/VatToggle.tsx";
@@ -85,8 +85,27 @@ export function App() {
   const effectiveActiveMs = userSelected ? activeMs : nowMs;
   const activeObs = obsAt(view.vis, effectiveActiveMs);
 
+  const st = data.status;
+  const vatText = vatIncluded ? s.vatInclShort : s.vatExclShort;
+  const srSummary = [
+    s.srIntro,
+    st.currentPriceEurMWh != null &&
+      s.srNow(priceText(st.currentPriceEurMWh, vat, locale), vatText),
+    st.todayAverageEurMWh != null &&
+      s.srToday(priceText(st.todayAverageEurMWh, vat, locale)),
+    st.tomorrowAverageEurMWh != null &&
+      s.srTomorrow(
+        priceText(st.tomorrowAverageEurMWh, vat, locale),
+        st.tomorrowType === "official",
+      ),
+    s.readoutHint,
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
     <main className="app">
+      <p className="sr-only">{srSummary}</p>
       <header className="site-head">
         <h1>
           {s.title} <span className="sub">· {s.region}</span>

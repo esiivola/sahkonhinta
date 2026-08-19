@@ -1,0 +1,8 @@
+# Sähkön hinta · Suomi
+# Note: on GitHub project Pages this file resolves at /sahkonhinta/robots.txt.
+# Crawlers only honour robots directives at the host root (esiivola.github.io/robots.txt),
+# so this file is advisory here and becomes authoritative only under a custom domain.
+User-agent: *
+Allow: /
+
+Sitemap: https://esiivola.github.io/sahkonhinta/sitemap.xml

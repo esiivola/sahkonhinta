@@ -1,0 +1,28 @@
+{
+  "name": "Sähkön hinta · Suomi",
+  "short_name": "Sähkön hinta",
+  "description": "Sähkön pörssihinta nyt ja lyhyen aikavälin ennuste yhdellä selkeällä kuvaajalla.",
+  "lang": "fi",
+  "dir": "ltr",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f4ef",
+  "theme_color": "#f6f4ef",
+  "categories": ["utilities", "finance", "news"],
+  "icons": [
+    {
+      "src": "icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "maskable"
+    }
+  ]
+}

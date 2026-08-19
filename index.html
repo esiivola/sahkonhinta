@@ -3,19 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="light" />
     <meta name="theme-color" content="#f6f4ef" />
+
+    <title>Sähkön hinta nyt · Suomi · snt/kWh</title>
     <meta
       name="description"
-      content="Sähkön hinta nyt ja paras saatavilla oleva arvio tulevasta: viralliset vuorokausihinnat ja lyhyen aikavälin ennuste yhdellä selkeällä kuvaajalla."
+      content="Sähkön pörssihinta nyt ja paras saatavilla oleva arvio tulevasta: viralliset Nord Pool -vuorokausihinnat ja lyhyen aikavälin ennuste yhdellä selkeällä kuvaajalla. snt/kWh, ALV 25,5 %."
     />
+    <meta name="author" content="Eero Siivola" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://esiivola.github.io/sahkonhinta/" />
+
+    <!-- Alternate language hints (single page serves both FI and EN in-app) -->
+    <link rel="alternate" hreflang="fi" href="https://esiivola.github.io/sahkonhinta/" />
+    <link rel="alternate" hreflang="en" href="https://esiivola.github.io/sahkonhinta/" />
+    <link rel="alternate" hreflang="x-default" href="https://esiivola.github.io/sahkonhinta/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sähkön hinta · Suomi" />
+    <meta property="og:title" content="Sähkön hinta nyt · Suomi" />
+    <meta
+      property="og:description"
+      content="Sähkön pörssihinta nyt ja lyhyen aikavälin ennuste yhdellä selkeällä kuvaajalla. snt/kWh, ALV 25,5 %."
+    />
+    <meta property="og:url" content="https://esiivola.github.io/sahkonhinta/" />
+    <meta property="og:locale" content="fi_FI" />
+    <meta property="og:locale:alternate" content="en_GB" />
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Sähkön hinta nyt · Suomi" />
+    <meta
+      name="twitter:description"
+      content="Sähkön pörssihinta nyt ja lyhyen aikavälin ennuste yhdellä selkeällä kuvaajalla. snt/kWh, ALV 25,5 %."
+    />
+
+    <link rel="manifest" href="manifest.webmanifest" />
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2319201c'/%3E%3Cpath d='M36 8 L18 36 h12 l-4 20 22-30 h-13 z' fill='%23f6f4ef'/%3E%3C/svg%3E"
     />
-    <title>Sähkön hinta · Suomi</title>
+    <link rel="icon" type="image/svg+xml" href="icon.svg" />
+
+    <!-- Structured data: helps search engines classify the app -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Sähkön hinta · Suomi",
+        "url": "https://esiivola.github.io/sahkonhinta/",
+        "description": "Sähkön pörssihinta nyt ja paras saatavilla oleva arvio tulevasta: viralliset Nord Pool -vuorokausihinnat ja lyhyen aikavälin ennuste yhdellä kuvaajalla.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "inLanguage": ["fi", "en"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+        "author": {
+          "@type": "Person",
+          "name": "Eero Siivola",
+          "url": "https://esiivola.github.io/"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <div style="max-width: 640px; margin: 3rem auto; padding: 0 1.25rem; font-family: system-ui, -apple-system, sans-serif; color: #19201c; line-height: 1.6">
+        <h1 style="font-size: 1.25rem">Sähkön hinta · Suomi</h1>
+        <p lang="fi">
+          Tämä palvelu näyttää Suomen sähkön pörssihinnan (snt/kWh) nyt ja lyhyen
+          aikavälin ennusteen. Sivun käyttö vaatii JavaScriptin. Viralliset
+          vuorokausihinnat: Nord Pool / ENTSO-E. Ennuste: nordpool-predict-fi.
+        </p>
+        <p lang="en">
+          This service shows the Finnish day-ahead electricity price (c/kWh) now
+          and a short-term forecast. JavaScript is required to view the live chart.
+        </p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
