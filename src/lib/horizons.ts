@@ -1,8 +1,8 @@
 /**
- * View horizons and time-axis ticks. Horizons are calendar-anchored to the
- * Finnish day so "Today" shows the whole day (00:00–24:00) with the now-line
- * indicating the current price - the mental model people expect from Finnish
- * electricity-price services. Windows are clamped to the available data range.
+ * View horizons and time-axis ticks. All horizons are calendar-anchored to the
+ * Finnish day and start at today 00:00, so each view is "today + N days":
+ * Today (0), Tomorrow (today + 1), Week (today + ~6). This makes the three views
+ * directly comparable. Windows are clamped to the available data range.
  */
 import {
   TZ,
@@ -38,7 +38,8 @@ export function windowFor(
     from = helsinkiMidnightUtc(today);
     to = helsinkiMidnightUtc(addDays(today, 1));
   } else if (key === "tomorrow") {
-    from = helsinkiMidnightUtc(addDays(today, 1));
+    // Today + tomorrow, so the view stays comparable with Today and Week.
+    from = helsinkiMidnightUtc(today);
     to = helsinkiMidnightUtc(addDays(today, 2));
   } else {
     from = helsinkiMidnightUtc(today);

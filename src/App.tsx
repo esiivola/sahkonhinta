@@ -62,10 +62,9 @@ export function App() {
     const vis = obs.filter(
       (o) => toMs(o.start) < win.to && toMs(o.end) > win.from,
     );
-    const showLegend =
-      vis.some((o) => o.type === "official") &&
-      vis.some((o) => o.type === "forecast");
-    return { obs, win, vis, showLegend };
+    const hasOfficial = vis.some((o) => o.type === "official");
+    const hasForecast = vis.some((o) => o.type === "forecast");
+    return { obs, win, vis, hasOfficial, hasForecast };
   }, [data, horizon, nowMs]);
 
   if (loading) {
@@ -126,20 +125,24 @@ export function App() {
           s={s}
           locale={locale}
         />
-        {view.showLegend && (
+        {(view.hasOfficial || view.hasForecast) && (
           <div className="legend" aria-hidden="true">
-            <span className="key">
-              <svg width="24" height="8" viewBox="0 0 24 8">
-                <line x1="0" y1="4" x2="24" y2="4" className="line-official" />
-              </svg>
-              {s.official}
-            </span>
-            <span className="key">
-              <svg width="24" height="8" viewBox="0 0 24 8">
-                <line x1="0" y1="4" x2="24" y2="4" className="line-forecast" />
-              </svg>
-              {s.forecast}
-            </span>
+            {view.hasOfficial && (
+              <span className="key">
+                <svg width="24" height="8" viewBox="0 0 24 8">
+                  <line x1="0" y1="4" x2="24" y2="4" className="line-official" />
+                </svg>
+                {s.official}
+              </span>
+            )}
+            {view.hasForecast && (
+              <span className="key">
+                <svg width="24" height="8" viewBox="0 0 24 8">
+                  <line x1="0" y1="4" x2="24" y2="4" className="line-forecast" />
+                </svg>
+                {s.forecast}
+              </span>
+            )}
           </div>
         )}
         <Readout obs={activeObs} vat={vat} s={s} locale={locale} />

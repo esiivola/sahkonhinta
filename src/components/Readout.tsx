@@ -10,8 +10,8 @@ interface Props {
 }
 
 /**
- * Stable detail readout for the currently selected point. Updated by both tap
- * and keyboard; announced to screen readers via aria-live.
+ * Stable detail readout for the currently selected point: just the time range
+ * and its price. Updated by both tap and keyboard; announced via aria-live.
  */
 export function Readout({ obs, vat, s, locale }: Props) {
   if (!obs) {
@@ -25,16 +25,12 @@ export function Readout({ obs, vat, s, locale }: Props) {
   return (
     <div className="readout" aria-live="polite">
       <span className="sr-only">{r.aria}</span>
-      <span className="when" aria-hidden="true">
+      <span className="readout-time num" aria-hidden="true">
         {r.day} · {r.interval}
       </span>
-      <span className="price" aria-hidden="true">
+      <span className="readout-price num" aria-hidden="true">
         {r.price}
-        <span className="unit">{s.unit}</span>
-      </span>
-      <span className="interval" aria-hidden="true">
-        <span className={`badge ${obs.type}`}>{r.typeLabel}</span> {r.source}
-        {r.band ? ` · ${r.band}` : ""}
+        <span className="readout-unit">{s.unit}</span>
       </span>
     </div>
   );

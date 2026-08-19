@@ -136,6 +136,10 @@ export function PriceChart({
   const xTicks = timeTicks(from, to, locale);
   const pxPerTick = (px1 - px0) / Math.max(1, xTicks.length);
   const labelEvery = Math.max(1, Math.ceil(50 / pxPerTick));
+  // When there are only a few day-boundary ticks (hourly views), always label
+  // them so the date context is never thinned away; otherwise thin uniformly.
+  const majorCount = xTicks.reduce((n, t) => n + (t.major ? 1 : 0), 0);
+  const alwaysLabelMajors = majorCount <= 4;
 
   const showNow = nowMs > from && nowMs < to;
   const nx = showNow ? x(nowMs) : 0;
@@ -202,7 +206,7 @@ export function PriceChart({
                 y2={py1}
                 className={t.major ? "grid-major" : "grid"}
               />
-              {i % labelEvery === 0 && (
+              {((alwaysLabelMajors && t.major) || i % labelEvery === 0) && (
                 <text
                   x={gx}
                   y={py1 + 14}

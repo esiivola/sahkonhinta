@@ -442,37 +442,33 @@ a {
   stroke-dasharray: 5 4;
 }
 
-/* Readout */
+/* Readout: time range + price only, one consistent type family */
 .readout {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: var(--s-2) var(--s-4);
+  gap: var(--s-1) var(--s-3);
   padding: var(--s-3) var(--s-1) var(--s-1);
-  min-height: 52px;
+  min-height: 44px;
 }
-.readout .when {
+.readout-time {
   font-size: 0.9rem;
-  color: var(--ink-2);
-  font-weight: 600;
-}
-.readout .price {
-  font-size: 1.35rem;
-  font-weight: 600;
-}
-.readout .price .unit {
-  font-size: 0.85rem;
-  color: var(--ink-2);
-  font-weight: 500;
-  margin-left: 3px;
-}
-.readout .interval {
-  font-size: 0.8rem;
   color: var(--ink-3);
+}
+.readout-price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.readout-unit {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-3);
+  margin-left: 0.3em;
 }
 .readout .hint {
   color: var(--ink-3);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 /* ---------- Info dialog ---------- */
