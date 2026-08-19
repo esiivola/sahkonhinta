@@ -31,12 +31,18 @@ export function withoutVat(valueInclVat: number, rate: number): number {
 /**
  * Convert an internal EUR/MWh VAT0 price to the display value in c/kWh,
  * optionally with VAT applied. This is the single conversion the UI uses.
+ *
+ * VAT is applied only to positive prices: negative wholesale prices are not
+ * taxed, matching Finnish spot-price services (e.g. porssisahko.net).
  */
 export function displayCents(
   eurMWhVat0: number,
   opts: { vatIncluded: boolean; rate: number },
 ): number {
-  const eurMWh = opts.vatIncluded ? withVat(eurMWhVat0, opts.rate) : eurMWhVat0;
+  const eurMWh =
+    opts.vatIncluded && eurMWhVat0 > 0
+      ? withVat(eurMWhVat0, opts.rate)
+      : eurMWhVat0;
   return eurMWhToCentsPerKWh(eurMWh);
 }
 

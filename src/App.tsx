@@ -5,7 +5,6 @@ import { toMs } from "./lib/time.ts";
 import { obsAt } from "./lib/select.ts";
 import { LOCALE, type Lang, strings } from "./lib/i18n.ts";
 import type { VatOpts } from "./lib/format.ts";
-import { PriceSummary } from "./components/PriceSummary.tsx";
 import { PriceChart } from "./components/PriceChart.tsx";
 import { HorizonSelector } from "./components/HorizonSelector.tsx";
 import { VatToggle } from "./components/VatToggle.tsx";
@@ -63,29 +62,11 @@ export function App() {
     const vis = obs.filter(
       (o) => toMs(o.start) < win.to && toMs(o.end) > win.from,
     );
-    const officialEndMs = data.status.officialEndsAt
-      ? toMs(data.status.officialEndsAt)
-      : null;
     const livePriceNow = obsAt(obs, nowMs)?.priceEurMWh ?? null;
     const showLegend =
       vis.some((o) => o.type === "official") &&
       vis.some((o) => o.type === "forecast");
-
-    // Tomorrow's average, computed relative to the real clock (not generation
-    // time) so it stays correct across a midnight rollover between refreshes.
-    const tWin = windowFor("tomorrow", nowMs, dataStart, dataEnd);
-    const tObs = obs.filter(
-      (o) => toMs(o.start) < tWin.to && toMs(o.end) > tWin.from,
-    );
-    const tomorrow = tObs.length
-      ? {
-          avgEurMWh:
-            tObs.reduce((sum, o) => sum + o.priceEurMWh, 0) / tObs.length,
-          official: tObs.every((o) => o.type === "official"),
-        }
-      : null;
-
-    return { obs, win, vis, officialEndMs, livePriceNow, showLegend, tomorrow };
+    return { obs, win, vis, livePriceNow, showLegend };
   }, [data, horizon, nowMs]);
 
   if (loading) {
@@ -105,7 +86,6 @@ export function App() {
 
   const effectiveActiveMs = userSelected ? activeMs : nowMs;
   const activeObs = obsAt(view.vis, effectiveActiveMs);
-  const currentPrice = view.livePriceNow ?? data.status.currentPriceEurMWh;
 
   return (
     <main className="app">
@@ -127,16 +107,6 @@ export function App() {
         </div>
       </header>
 
-      <PriceSummary
-        currentPriceEurMWh={currentPrice}
-        vis={view.vis}
-        horizon={horizon}
-        tomorrow={view.tomorrow}
-        vat={vat}
-        s={s}
-        locale={locale}
-      />
-
       <div className="controls">
         <HorizonSelector value={horizon} onChange={setHorizon} s={s} />
         <VatToggle vatIncluded={vatIncluded} onChange={setVatIncluded} s={s} />
@@ -147,7 +117,6 @@ export function App() {
           vis={view.vis}
           from={view.win.from}
           to={view.win.to}
-          officialEndMs={view.officialEndMs}
           nowMs={nowMs}
           currentPriceEurMWh={view.livePriceNow}
           vat={vat}

@@ -1,5 +1,5 @@
 /* ============================================================
-   Design tokens — warm off-white, dark green-black ink,
+   Design tokens - warm off-white, dark green-black ink,
    one restrained teal accent reserved for UI chrome only.
    Chart data is drawn in ink (solid = official, dashed = forecast)
    so sources are never distinguished by color alone.
@@ -15,7 +15,7 @@
   --grid: #e8e4da; /* chart gridlines */
   --grid-strong: #c9c3b5; /* zero line, axis baseline */
 
-  /* One restrained accent — UI chrome only (never encodes data) */
+  /* One restrained accent - UI chrome only (never encodes data) */
   --accent: #1c6b5a;
   --accent-weak: #e4ede9;
   --accent-ink: #0f4e40; /* accent text meeting AA on --bg */
@@ -385,7 +385,7 @@ a {
   font-weight: 600;
 }
 
-/* Price lines — sources distinguished by style, never color alone */
+/* Price lines - sources distinguished by style, never color alone */
 .chart-svg .line-official,
 .chart-svg .line-forecast {
   fill: none;
@@ -444,7 +444,7 @@ a {
   stroke-width: 2;
 }
 
-/* Legend — direct key for line styles (redundant with boundary labels) */
+/* Legend - direct key for line styles (redundant with boundary labels) */
 .legend {
   display: flex;
   gap: var(--s-4);

@@ -1,7 +1,7 @@
 /**
  * Shared domain types. Imported by both the ingestion pipeline (scripts/)
  * and the frontend (src/). The frontend knows nothing about source-specific
- * API formats — only these normalized shapes.
+ * API formats - only these normalized shapes.
  *
  * Internal price unit is always EUR/MWh, VAT-excluded (VAT0). Presentation
  * conversion to c/kWh and VAT re-application happens centrally in units.ts.
@@ -30,7 +30,7 @@ export interface Observation {
   highEurMWh?: number;
 }
 
-/** data/timeline.json — the resolved, coherent curve the frontend renders. */
+/** data/timeline.json - the resolved, coherent curve the frontend renders. */
 export interface Timeline {
   /** ISO-8601 UTC instant this file was generated. */
   generatedAt: string;
@@ -47,7 +47,7 @@ export interface SourceCredit {
   license: string;
 }
 
-/** data/status.json — the at-a-glance headline figures. */
+/** data/status.json - the at-a-glance headline figures. */
 export interface Status {
   updatedAt: string;
   /** "Now" instant used when the file was generated (ISO-8601 UTC). */
@@ -68,7 +68,7 @@ export interface Status {
   sources: SourceCredit[];
 }
 
-/** data/observations.json — internal accumulated official store (merge target). */
+/** data/observations.json - internal accumulated official store (merge target). */
 export interface ObservationStore {
   updatedAt: string;
   /** Accumulated official observations, sorted ascending by start. */

@@ -1,7 +1,7 @@
 /**
  * View horizons and time-axis ticks. Horizons are calendar-anchored to the
  * Finnish day so "Today" shows the whole day (00:00–24:00) with the now-line
- * indicating the current price — the mental model people expect from Finnish
+ * indicating the current price - the mental model people expect from Finnish
  * electricity-price services. Windows are clamped to the available data range.
  */
 import {

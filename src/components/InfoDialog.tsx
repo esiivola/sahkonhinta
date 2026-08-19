@@ -71,7 +71,7 @@ export function InfoDialog({ open, onClose, status, lang, locale, s }: Props) {
           valinnan mukaan.
         </p>
         <p>
-          Pitkän aikavälin futuureja ei näytetä — Euronextin / Nord Poolin
+          Pitkän aikavälin futuureja ei näytetä: Euronextin / Nord Poolin
           selvityshintoja ei saa vapaasti jakaa. Futuurikäyrän näet palvelusta{" "}
           {euronext} tai {tutka}.
         </p>
@@ -88,7 +88,7 @@ export function InfoDialog({ open, onClose, status, lang, locale, s }: Props) {
           applied per the toggle.
         </p>
         <p>
-          Longer-term market forwards are not shown — Euronext / Nord Pool
+          Longer-term market forwards are not shown: Euronext / Nord Pool
           settlement prices cannot be freely redistributed. For the forward curve
           see {euronext} or {tutka}.
         </p>

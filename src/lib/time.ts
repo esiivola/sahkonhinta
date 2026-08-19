@@ -115,7 +115,7 @@ export function fmtTime(ms: number, locale: string): string {
   }).format(ms);
 }
 
-/** e.g. "Wed 19" / "ke 19" — compact axis label for day boundaries */
+/** e.g. "Wed 19" / "ke 19" - compact axis label for day boundaries */
 export function fmtWeekdayDay(ms: number, locale: string): string {
   return getFmt(locale, "wd", { weekday: "short", day: "numeric" }).format(ms);
 }

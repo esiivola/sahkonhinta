@@ -12,7 +12,6 @@ interface Props {
   vis: Observation[];
   from: number;
   to: number;
-  officialEndMs: number | null;
   nowMs: number;
   currentPriceEurMWh: number | null;
   vat: VatOpts;
@@ -42,7 +41,6 @@ export function PriceChart({
   vis,
   from,
   to,
-  officialEndMs,
   nowMs,
   currentPriceEurMWh,
   vat,
@@ -125,14 +123,14 @@ export function PriceChart({
   const y = makeScale(dMin, dMax, py1, py0);
 
   // Split visible observations into runs of the same type for line styling.
+  // The solid/dashed line style itself signals official vs forecast, so no
+  // separate boundary marker is drawn.
   const runs: Observation[][] = [];
   for (const o of vis) {
     const last = runs[runs.length - 1];
     if (last && last[0].type === o.type) last.push(o);
     else runs.push([o]);
   }
-  const hasOfficial = vis.some((o) => o.type === "official");
-  const hasForecast = vis.some((o) => o.type === "forecast");
 
   const step = yTicks.length > 1 ? yTicks[1] - yTicks[0] : 1;
   const yDec = step < 1 ? 2 : step < 5 ? 1 : 0;
@@ -140,15 +138,6 @@ export function PriceChart({
   const xTicks = timeTicks(from, to, locale);
   const pxPerTick = (px1 - px0) / Math.max(1, xTicks.length);
   const labelEvery = Math.max(1, Math.ceil(50 / pxPerTick));
-
-  // Boundary only where it means something: both sources visible at once.
-  const showBoundary =
-    officialEndMs !== null &&
-    officialEndMs > from &&
-    officialEndMs < to &&
-    hasOfficial &&
-    hasForecast;
-  const bx = showBoundary ? x(officialEndMs) : 0;
 
   const showNow = nowMs > from && nowMs < to;
   const nx = showNow ? x(nowMs) : 0;
@@ -260,19 +249,6 @@ export function PriceChart({
             />
           ))}
         </g>
-
-        {/* boundary: OFFICIAL | FORECAST (only when both are visible) */}
-        {showBoundary && (
-          <g>
-            <line x1={bx} x2={bx} y1={py0} y2={py1} className="boundary" />
-            <text x={bx - 5} y={py0 + 9} className="boundary-label" textAnchor="end">
-              {s.markerOfficial}
-            </text>
-            <text x={bx + 5} y={py0 + 9} className="boundary-label" textAnchor="start">
-              {s.markerForecast}
-            </text>
-          </g>
-        )}
 
         {/* now marker + live price tag */}
         {showNow && (
