@@ -1,385 +1,7 @@
 {
-  "generatedAt": "2026-11-16T12:07:49.356Z",
+  "generatedAt": "2026-11-16T22:35:10.063Z",
   "vatRate": 0.255,
   "observations": [
-    {
-      "start": "2026-10-02T12:00:00.000Z",
-      "end": "2026-10-02T12:15:00.000Z",
-      "priceEurMWh": 44.1514,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T12:15:00.000Z",
-      "end": "2026-10-02T12:30:00.000Z",
-      "priceEurMWh": 49.9761,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T12:30:00.000Z",
-      "end": "2026-10-02T12:45:00.000Z",
-      "priceEurMWh": 50,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T12:45:00.000Z",
-      "end": "2026-10-02T13:00:00.000Z",
-      "priceEurMWh": 57.498,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T13:00:00.000Z",
-      "end": "2026-10-02T13:15:00.000Z",
-      "priceEurMWh": 39.9363,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T13:15:00.000Z",
-      "end": "2026-10-02T13:30:00.000Z",
-      "priceEurMWh": 50.0478,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T13:30:00.000Z",
-      "end": "2026-10-02T13:45:00.000Z",
-      "priceEurMWh": 66.0876,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T13:45:00.000Z",
-      "end": "2026-10-02T14:00:00.000Z",
-      "priceEurMWh": 80.6614,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T14:00:00.000Z",
-      "end": "2026-10-02T14:15:00.000Z",
-      "priceEurMWh": 54.3108,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T14:15:00.000Z",
-      "end": "2026-10-02T14:30:00.000Z",
-      "priceEurMWh": 63.9203,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T14:30:00.000Z",
-      "end": "2026-10-02T14:45:00.000Z",
-      "priceEurMWh": 65.2112,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T14:45:00.000Z",
-      "end": "2026-10-02T15:00:00.000Z",
-      "priceEurMWh": 78.9084,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T15:00:00.000Z",
-      "end": "2026-10-02T15:15:00.000Z",
-      "priceEurMWh": 96.8924,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T15:15:00.000Z",
-      "end": "2026-10-02T15:30:00.000Z",
-      "priceEurMWh": 102.4064,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T15:30:00.000Z",
-      "end": "2026-10-02T15:45:00.000Z",
-      "priceEurMWh": 87.49,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T15:45:00.000Z",
-      "end": "2026-10-02T16:00:00.000Z",
-      "priceEurMWh": 69.4263,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T16:00:00.000Z",
-      "end": "2026-10-02T16:15:00.000Z",
-      "priceEurMWh": 104.2072,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T16:15:00.000Z",
-      "end": "2026-10-02T16:30:00.000Z",
-      "priceEurMWh": 90.0797,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T16:30:00.000Z",
-      "end": "2026-10-02T16:45:00.000Z",
-      "priceEurMWh": 69.2829,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T16:45:00.000Z",
-      "end": "2026-10-02T17:00:00.000Z",
-      "priceEurMWh": 47.6414,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T17:00:00.000Z",
-      "end": "2026-10-02T17:15:00.000Z",
-      "priceEurMWh": 59.8964,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T17:15:00.000Z",
-      "end": "2026-10-02T17:30:00.000Z",
-      "priceEurMWh": 49.992,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T17:30:00.000Z",
-      "end": "2026-10-02T17:45:00.000Z",
-      "priceEurMWh": 34.3028,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T17:45:00.000Z",
-      "end": "2026-10-02T18:00:00.000Z",
-      "priceEurMWh": 30.1594,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T18:00:00.000Z",
-      "end": "2026-10-02T18:15:00.000Z",
-      "priceEurMWh": 35.6096,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T18:15:00.000Z",
-      "end": "2026-10-02T18:30:00.000Z",
-      "priceEurMWh": 35.2908,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T18:30:00.000Z",
-      "end": "2026-10-02T18:45:00.000Z",
-      "priceEurMWh": 31.4263,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T18:45:00.000Z",
-      "end": "2026-10-02T19:00:00.000Z",
-      "priceEurMWh": 32.9482,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T19:00:00.000Z",
-      "end": "2026-10-02T19:15:00.000Z",
-      "priceEurMWh": 33.6414,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T19:15:00.000Z",
-      "end": "2026-10-02T19:30:00.000Z",
-      "priceEurMWh": 34.988,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T19:30:00.000Z",
-      "end": "2026-10-02T19:45:00.000Z",
-      "priceEurMWh": 34.741,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T19:45:00.000Z",
-      "end": "2026-10-02T20:00:00.000Z",
-      "priceEurMWh": 27.259,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T20:00:00.000Z",
-      "end": "2026-10-02T20:15:00.000Z",
-      "priceEurMWh": 40.6614,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T20:15:00.000Z",
-      "end": "2026-10-02T20:30:00.000Z",
-      "priceEurMWh": 31.5538,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T20:30:00.000Z",
-      "end": "2026-10-02T20:45:00.000Z",
-      "priceEurMWh": 27.7291,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T20:45:00.000Z",
-      "end": "2026-10-02T21:00:00.000Z",
-      "priceEurMWh": 24.7729,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T21:00:00.000Z",
-      "end": "2026-10-02T21:15:00.000Z",
-      "priceEurMWh": 31.9283,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T21:15:00.000Z",
-      "end": "2026-10-02T21:30:00.000Z",
-      "priceEurMWh": 28.1912,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T21:30:00.000Z",
-      "end": "2026-10-02T21:45:00.000Z",
-      "priceEurMWh": 27.992,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T21:45:00.000Z",
-      "end": "2026-10-02T22:00:00.000Z",
-      "priceEurMWh": 20.7809,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-03T09:27:59.549Z"
-    },
-    {
-      "start": "2026-10-02T22:00:00.000Z",
-      "end": "2026-10-02T22:15:00.000Z",
-      "priceEurMWh": 40.6295,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-04T10:14:39.343Z"
-    },
-    {
-      "start": "2026-10-02T22:15:00.000Z",
-      "end": "2026-10-02T22:30:00.000Z",
-      "priceEurMWh": 34.1912,
-      "type": "official",
-      "resolution": "PT15M",
-      "source": "Nord Pool",
-      "updatedAt": "2026-10-04T10:14:39.343Z"
-    },
     {
       "start": "2026-10-02T22:30:00.000Z",
       "end": "2026-10-02T22:45:00.000Z",
@@ -38421,7 +38043,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-15T23:15:00.000Z",
@@ -38430,7 +38052,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-15T23:30:00.000Z",
@@ -38439,7 +38061,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-15T23:45:00.000Z",
@@ -38448,7 +38070,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T00:00:00.000Z",
@@ -38457,7 +38079,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T00:15:00.000Z",
@@ -38466,7 +38088,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T00:30:00.000Z",
@@ -38475,7 +38097,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T00:45:00.000Z",
@@ -38484,7 +38106,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T01:00:00.000Z",
@@ -38493,7 +38115,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T01:15:00.000Z",
@@ -38502,7 +38124,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T01:30:00.000Z",
@@ -38511,7 +38133,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T01:45:00.000Z",
@@ -38520,7 +38142,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T02:00:00.000Z",
@@ -38529,7 +38151,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T02:15:00.000Z",
@@ -38538,7 +38160,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T02:30:00.000Z",
@@ -38547,7 +38169,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T02:45:00.000Z",
@@ -38556,7 +38178,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T03:00:00.000Z",
@@ -38565,7 +38187,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T03:15:00.000Z",
@@ -38574,7 +38196,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T03:30:00.000Z",
@@ -38583,7 +38205,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T03:45:00.000Z",
@@ -38592,7 +38214,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T04:00:00.000Z",
@@ -38601,7 +38223,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T04:15:00.000Z",
@@ -38610,7 +38232,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T04:30:00.000Z",
@@ -38619,7 +38241,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T04:45:00.000Z",
@@ -38628,7 +38250,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T05:00:00.000Z",
@@ -38637,7 +38259,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T05:15:00.000Z",
@@ -38646,7 +38268,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T05:30:00.000Z",
@@ -38655,7 +38277,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T05:45:00.000Z",
@@ -38664,7 +38286,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T06:00:00.000Z",
@@ -38673,7 +38295,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T06:15:00.000Z",
@@ -38682,7 +38304,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T06:30:00.000Z",
@@ -38691,7 +38313,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T06:45:00.000Z",
@@ -38700,7 +38322,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T07:00:00.000Z",
@@ -38709,7 +38331,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T07:15:00.000Z",
@@ -38718,7 +38340,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T07:30:00.000Z",
@@ -38727,7 +38349,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T07:45:00.000Z",
@@ -38736,7 +38358,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T08:00:00.000Z",
@@ -38745,7 +38367,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T08:15:00.000Z",
@@ -38754,7 +38376,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T08:30:00.000Z",
@@ -38763,7 +38385,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T08:45:00.000Z",
@@ -38772,7 +38394,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T09:00:00.000Z",
@@ -38781,7 +38403,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T09:15:00.000Z",
@@ -38790,7 +38412,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T09:30:00.000Z",
@@ -38799,7 +38421,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T09:45:00.000Z",
@@ -38808,7 +38430,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T10:00:00.000Z",
@@ -38817,7 +38439,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T10:15:00.000Z",
@@ -38826,7 +38448,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T10:30:00.000Z",
@@ -38835,7 +38457,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T10:45:00.000Z",
@@ -38844,7 +38466,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T11:00:00.000Z",
@@ -38853,7 +38475,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T11:15:00.000Z",
@@ -38862,7 +38484,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T11:30:00.000Z",
@@ -38871,7 +38493,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T11:45:00.000Z",
@@ -38880,7 +38502,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T12:00:00.000Z",
@@ -38889,7 +38511,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T12:15:00.000Z",
@@ -38898,7 +38520,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T12:30:00.000Z",
@@ -38907,7 +38529,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T12:45:00.000Z",
@@ -38916,7 +38538,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T13:00:00.000Z",
@@ -38925,7 +38547,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T13:15:00.000Z",
@@ -38934,7 +38556,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T13:30:00.000Z",
@@ -38943,7 +38565,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T13:45:00.000Z",
@@ -38952,7 +38574,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T14:00:00.000Z",
@@ -38961,7 +38583,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T14:15:00.000Z",
@@ -38970,7 +38592,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T14:30:00.000Z",
@@ -38979,7 +38601,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T14:45:00.000Z",
@@ -38988,7 +38610,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T15:00:00.000Z",
@@ -38997,7 +38619,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T15:15:00.000Z",
@@ -39006,7 +38628,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T15:30:00.000Z",
@@ -39015,7 +38637,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T15:45:00.000Z",
@@ -39024,7 +38646,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T16:00:00.000Z",
@@ -39033,7 +38655,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T16:15:00.000Z",
@@ -39042,7 +38664,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T16:30:00.000Z",
@@ -39051,7 +38673,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T16:45:00.000Z",
@@ -39060,7 +38682,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T17:00:00.000Z",
@@ -39069,7 +38691,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T17:15:00.000Z",
@@ -39078,7 +38700,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T17:30:00.000Z",
@@ -39087,7 +38709,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T17:45:00.000Z",
@@ -39096,7 +38718,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T18:00:00.000Z",
@@ -39105,7 +38727,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T18:15:00.000Z",
@@ -39114,7 +38736,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T18:30:00.000Z",
@@ -39123,7 +38745,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T18:45:00.000Z",
@@ -39132,7 +38754,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T19:00:00.000Z",
@@ -39141,7 +38763,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T19:15:00.000Z",
@@ -39150,7 +38772,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T19:30:00.000Z",
@@ -39159,7 +38781,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T19:45:00.000Z",
@@ -39168,7 +38790,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T20:00:00.000Z",
@@ -39177,7 +38799,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T20:15:00.000Z",
@@ -39186,7 +38808,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T20:30:00.000Z",
@@ -39195,7 +38817,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T20:45:00.000Z",
@@ -39204,7 +38826,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T21:00:00.000Z",
@@ -39213,7 +38835,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T21:15:00.000Z",
@@ -39222,7 +38844,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T21:30:00.000Z",
@@ -39231,7 +38853,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T21:45:00.000Z",
@@ -39240,7 +38862,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T22:00:00.000Z",
@@ -39249,7 +38871,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T22:15:00.000Z",
@@ -39258,7 +38880,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T22:30:00.000Z",
@@ -39267,7 +38889,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T22:45:00.000Z",
@@ -39276,7 +38898,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T23:00:00.000Z",
@@ -39285,7 +38907,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T23:15:00.000Z",
@@ -39294,7 +38916,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T23:30:00.000Z",
@@ -39303,7 +38925,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-16T23:45:00.000Z",
@@ -39312,7 +38934,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T00:00:00.000Z",
@@ -39321,7 +38943,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T00:15:00.000Z",
@@ -39330,7 +38952,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T00:30:00.000Z",
@@ -39339,7 +38961,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T00:45:00.000Z",
@@ -39348,7 +38970,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T01:00:00.000Z",
@@ -39357,7 +38979,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T01:15:00.000Z",
@@ -39366,7 +38988,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T01:30:00.000Z",
@@ -39375,7 +38997,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T01:45:00.000Z",
@@ -39384,7 +39006,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T02:00:00.000Z",
@@ -39393,7 +39015,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T02:15:00.000Z",
@@ -39402,7 +39024,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T02:30:00.000Z",
@@ -39411,7 +39033,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T02:45:00.000Z",
@@ -39420,7 +39042,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T03:00:00.000Z",
@@ -39429,7 +39051,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T03:15:00.000Z",
@@ -39438,7 +39060,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T03:30:00.000Z",
@@ -39447,7 +39069,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T03:45:00.000Z",
@@ -39456,7 +39078,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T04:00:00.000Z",
@@ -39465,7 +39087,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T04:15:00.000Z",
@@ -39474,7 +39096,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T04:30:00.000Z",
@@ -39483,7 +39105,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T04:45:00.000Z",
@@ -39492,7 +39114,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T05:00:00.000Z",
@@ -39501,7 +39123,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T05:15:00.000Z",
@@ -39510,7 +39132,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T05:30:00.000Z",
@@ -39519,7 +39141,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T05:45:00.000Z",
@@ -39528,7 +39150,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T06:00:00.000Z",
@@ -39537,7 +39159,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T06:15:00.000Z",
@@ -39546,7 +39168,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T06:30:00.000Z",
@@ -39555,7 +39177,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T06:45:00.000Z",
@@ -39564,7 +39186,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T07:00:00.000Z",
@@ -39573,7 +39195,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T07:15:00.000Z",
@@ -39582,7 +39204,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T07:30:00.000Z",
@@ -39591,7 +39213,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T07:45:00.000Z",
@@ -39600,7 +39222,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T08:00:00.000Z",
@@ -39609,7 +39231,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T08:15:00.000Z",
@@ -39618,7 +39240,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T08:30:00.000Z",
@@ -39627,7 +39249,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T08:45:00.000Z",
@@ -39636,7 +39258,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T09:00:00.000Z",
@@ -39645,7 +39267,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T09:15:00.000Z",
@@ -39654,7 +39276,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T09:30:00.000Z",
@@ -39663,7 +39285,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T09:45:00.000Z",
@@ -39672,7 +39294,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T10:00:00.000Z",
@@ -39681,7 +39303,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T10:15:00.000Z",
@@ -39690,7 +39312,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T10:30:00.000Z",
@@ -39699,7 +39321,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T10:45:00.000Z",
@@ -39708,7 +39330,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T11:00:00.000Z",
@@ -39717,7 +39339,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T11:15:00.000Z",
@@ -39726,7 +39348,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T11:30:00.000Z",
@@ -39735,7 +39357,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T11:45:00.000Z",
@@ -39744,7 +39366,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T12:00:00.000Z",
@@ -39753,7 +39375,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T12:15:00.000Z",
@@ -39762,7 +39384,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T12:30:00.000Z",
@@ -39771,7 +39393,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T12:45:00.000Z",
@@ -39780,7 +39402,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T13:00:00.000Z",
@@ -39789,7 +39411,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T13:15:00.000Z",
@@ -39798,7 +39420,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T13:30:00.000Z",
@@ -39807,7 +39429,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T13:45:00.000Z",
@@ -39816,7 +39438,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T14:00:00.000Z",
@@ -39825,7 +39447,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T14:15:00.000Z",
@@ -39834,7 +39456,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T14:30:00.000Z",
@@ -39843,7 +39465,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T14:45:00.000Z",
@@ -39852,7 +39474,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T15:00:00.000Z",
@@ -39861,7 +39483,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T15:15:00.000Z",
@@ -39870,7 +39492,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T15:30:00.000Z",
@@ -39879,7 +39501,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T15:45:00.000Z",
@@ -39888,7 +39510,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T16:00:00.000Z",
@@ -39897,7 +39519,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T16:15:00.000Z",
@@ -39906,7 +39528,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T16:30:00.000Z",
@@ -39915,7 +39537,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T16:45:00.000Z",
@@ -39924,7 +39546,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T17:00:00.000Z",
@@ -39933,7 +39555,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T17:15:00.000Z",
@@ -39942,7 +39564,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T17:30:00.000Z",
@@ -39951,7 +39573,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T17:45:00.000Z",
@@ -39960,7 +39582,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T18:00:00.000Z",
@@ -39969,7 +39591,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T18:15:00.000Z",
@@ -39978,7 +39600,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T18:30:00.000Z",
@@ -39987,7 +39609,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T18:45:00.000Z",
@@ -39996,7 +39618,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T19:00:00.000Z",
@@ -40005,7 +39627,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T19:15:00.000Z",
@@ -40014,7 +39636,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T19:30:00.000Z",
@@ -40023,7 +39645,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T19:45:00.000Z",
@@ -40032,7 +39654,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T20:00:00.000Z",
@@ -40041,7 +39663,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T20:15:00.000Z",
@@ -40050,7 +39672,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T20:30:00.000Z",
@@ -40059,7 +39681,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T20:45:00.000Z",
@@ -40068,7 +39690,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T21:00:00.000Z",
@@ -40077,7 +39699,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T21:15:00.000Z",
@@ -40086,7 +39708,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T21:30:00.000Z",
@@ -40095,7 +39717,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T21:45:00.000Z",
@@ -40104,7 +39726,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T22:00:00.000Z",
@@ -40113,7 +39735,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T22:15:00.000Z",
@@ -40122,7 +39744,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T22:30:00.000Z",
@@ -40131,7 +39753,7 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T22:45:00.000Z",
@@ -40140,1312 +39762,1312 @@
       "type": "official",
       "resolution": "PT15M",
       "source": "Nord Pool",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-17T23:00:00.000Z",
       "end": "2026-11-18T00:00:00.000Z",
-      "priceEurMWh": 16.6076,
+      "priceEurMWh": 37.6868,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T00:00:00.000Z",
       "end": "2026-11-18T01:00:00.000Z",
-      "priceEurMWh": 10.7127,
+      "priceEurMWh": 22.267,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T01:00:00.000Z",
       "end": "2026-11-18T02:00:00.000Z",
-      "priceEurMWh": 12.6605,
+      "priceEurMWh": 23.5745,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T02:00:00.000Z",
       "end": "2026-11-18T03:00:00.000Z",
-      "priceEurMWh": 13.9773,
+      "priceEurMWh": 28.2463,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T03:00:00.000Z",
       "end": "2026-11-18T04:00:00.000Z",
-      "priceEurMWh": 17.9203,
+      "priceEurMWh": 30.9512,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T04:00:00.000Z",
       "end": "2026-11-18T05:00:00.000Z",
-      "priceEurMWh": 23.8446,
+      "priceEurMWh": 38.1878,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T05:00:00.000Z",
       "end": "2026-11-18T06:00:00.000Z",
-      "priceEurMWh": 30.325,
+      "priceEurMWh": 45.3278,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T06:00:00.000Z",
       "end": "2026-11-18T07:00:00.000Z",
-      "priceEurMWh": 40.5076,
+      "priceEurMWh": 56.0515,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T07:00:00.000Z",
       "end": "2026-11-18T08:00:00.000Z",
-      "priceEurMWh": 45.3528,
+      "priceEurMWh": 57.9838,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T08:00:00.000Z",
       "end": "2026-11-18T09:00:00.000Z",
-      "priceEurMWh": 44.9568,
+      "priceEurMWh": 53.7521,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T09:00:00.000Z",
       "end": "2026-11-18T10:00:00.000Z",
-      "priceEurMWh": 47.0323,
+      "priceEurMWh": 47.6987,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T10:00:00.000Z",
       "end": "2026-11-18T11:00:00.000Z",
-      "priceEurMWh": 42.8778,
+      "priceEurMWh": 43.9623,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T11:00:00.000Z",
       "end": "2026-11-18T12:00:00.000Z",
-      "priceEurMWh": 39.2648,
+      "priceEurMWh": 37.6215,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T12:00:00.000Z",
       "end": "2026-11-18T13:00:00.000Z",
-      "priceEurMWh": 38.4981,
+      "priceEurMWh": 38.808,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T13:00:00.000Z",
       "end": "2026-11-18T14:00:00.000Z",
-      "priceEurMWh": 41.1058,
+      "priceEurMWh": 35.2301,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T14:00:00.000Z",
       "end": "2026-11-18T15:00:00.000Z",
-      "priceEurMWh": 45.2451,
+      "priceEurMWh": 34.0415,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T15:00:00.000Z",
       "end": "2026-11-18T16:00:00.000Z",
-      "priceEurMWh": 48.992,
+      "priceEurMWh": 39.0148,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T16:00:00.000Z",
       "end": "2026-11-18T17:00:00.000Z",
-      "priceEurMWh": 45.0706,
+      "priceEurMWh": 43.6986,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T17:00:00.000Z",
       "end": "2026-11-18T18:00:00.000Z",
-      "priceEurMWh": 38.591,
+      "priceEurMWh": 49.8101,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T18:00:00.000Z",
       "end": "2026-11-18T19:00:00.000Z",
-      "priceEurMWh": 24.8964,
+      "priceEurMWh": 43.7848,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T19:00:00.000Z",
       "end": "2026-11-18T20:00:00.000Z",
-      "priceEurMWh": 25.2614,
+      "priceEurMWh": 41.442,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T20:00:00.000Z",
       "end": "2026-11-18T21:00:00.000Z",
-      "priceEurMWh": 29.4779,
+      "priceEurMWh": 46.4856,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T21:00:00.000Z",
       "end": "2026-11-18T22:00:00.000Z",
-      "priceEurMWh": 30.2889,
+      "priceEurMWh": 44.4136,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T22:00:00.000Z",
       "end": "2026-11-18T23:00:00.000Z",
-      "priceEurMWh": 30.4362,
+      "priceEurMWh": 40.8737,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-18T23:00:00.000Z",
       "end": "2026-11-19T00:00:00.000Z",
-      "priceEurMWh": 28.7791,
+      "priceEurMWh": 40.297,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T00:00:00.000Z",
       "end": "2026-11-19T01:00:00.000Z",
-      "priceEurMWh": 34.4409,
+      "priceEurMWh": 35.0361,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T01:00:00.000Z",
       "end": "2026-11-19T02:00:00.000Z",
-      "priceEurMWh": 35.0215,
+      "priceEurMWh": 42.1776,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T02:00:00.000Z",
       "end": "2026-11-19T03:00:00.000Z",
-      "priceEurMWh": 36.3798,
+      "priceEurMWh": 42.8122,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T03:00:00.000Z",
       "end": "2026-11-19T04:00:00.000Z",
-      "priceEurMWh": 39.6023,
+      "priceEurMWh": 48.9572,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T04:00:00.000Z",
       "end": "2026-11-19T05:00:00.000Z",
-      "priceEurMWh": 45.8162,
+      "priceEurMWh": 60.8607,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T05:00:00.000Z",
       "end": "2026-11-19T06:00:00.000Z",
-      "priceEurMWh": 65.145,
+      "priceEurMWh": 69.8432,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T06:00:00.000Z",
       "end": "2026-11-19T07:00:00.000Z",
-      "priceEurMWh": 82.7944,
+      "priceEurMWh": 85.3593,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T07:00:00.000Z",
       "end": "2026-11-19T08:00:00.000Z",
-      "priceEurMWh": 104.0539,
+      "priceEurMWh": 103.9011,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T08:00:00.000Z",
       "end": "2026-11-19T09:00:00.000Z",
-      "priceEurMWh": 97.4891,
+      "priceEurMWh": 107.6684,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T09:00:00.000Z",
       "end": "2026-11-19T10:00:00.000Z",
-      "priceEurMWh": 91.5179,
+      "priceEurMWh": 103.6767,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T10:00:00.000Z",
       "end": "2026-11-19T11:00:00.000Z",
-      "priceEurMWh": 87.8103,
+      "priceEurMWh": 98.739,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T11:00:00.000Z",
       "end": "2026-11-19T12:00:00.000Z",
-      "priceEurMWh": 107.2335,
+      "priceEurMWh": 105.1208,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T12:00:00.000Z",
       "end": "2026-11-19T13:00:00.000Z",
-      "priceEurMWh": 110.2851,
+      "priceEurMWh": 108.1846,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T13:00:00.000Z",
       "end": "2026-11-19T14:00:00.000Z",
-      "priceEurMWh": 123.7647,
+      "priceEurMWh": 118.5736,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T14:00:00.000Z",
       "end": "2026-11-19T15:00:00.000Z",
-      "priceEurMWh": 159.5219,
+      "priceEurMWh": 109.893,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T15:00:00.000Z",
       "end": "2026-11-19T16:00:00.000Z",
-      "priceEurMWh": 172.2709,
+      "priceEurMWh": 111.7577,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T16:00:00.000Z",
       "end": "2026-11-19T17:00:00.000Z",
-      "priceEurMWh": 122.4303,
+      "priceEurMWh": 112.8465,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T17:00:00.000Z",
       "end": "2026-11-19T18:00:00.000Z",
-      "priceEurMWh": 108.2814,
+      "priceEurMWh": 108.7678,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T18:00:00.000Z",
       "end": "2026-11-19T19:00:00.000Z",
-      "priceEurMWh": 96.198,
+      "priceEurMWh": 93.3051,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T19:00:00.000Z",
       "end": "2026-11-19T20:00:00.000Z",
-      "priceEurMWh": 90.9269,
+      "priceEurMWh": 84.2799,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T20:00:00.000Z",
       "end": "2026-11-19T21:00:00.000Z",
-      "priceEurMWh": 75.7428,
+      "priceEurMWh": 77.044,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T21:00:00.000Z",
       "end": "2026-11-19T22:00:00.000Z",
-      "priceEurMWh": 74.3036,
+      "priceEurMWh": 77.5484,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T22:00:00.000Z",
       "end": "2026-11-19T23:00:00.000Z",
-      "priceEurMWh": 67.8387,
+      "priceEurMWh": 70.1209,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-19T23:00:00.000Z",
       "end": "2026-11-20T00:00:00.000Z",
-      "priceEurMWh": 61.2123,
+      "priceEurMWh": 70.975,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T00:00:00.000Z",
       "end": "2026-11-20T01:00:00.000Z",
-      "priceEurMWh": 51.9886,
+      "priceEurMWh": 65.1565,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T01:00:00.000Z",
       "end": "2026-11-20T02:00:00.000Z",
-      "priceEurMWh": 50.0704,
+      "priceEurMWh": 66.7405,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T02:00:00.000Z",
       "end": "2026-11-20T03:00:00.000Z",
-      "priceEurMWh": 49.7546,
+      "priceEurMWh": 62.6983,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T03:00:00.000Z",
       "end": "2026-11-20T04:00:00.000Z",
-      "priceEurMWh": 53.2061,
+      "priceEurMWh": 57.5866,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T04:00:00.000Z",
       "end": "2026-11-20T05:00:00.000Z",
-      "priceEurMWh": 66.4523,
+      "priceEurMWh": 69.5212,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T05:00:00.000Z",
       "end": "2026-11-20T06:00:00.000Z",
-      "priceEurMWh": 80.935,
+      "priceEurMWh": 83.1169,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T06:00:00.000Z",
       "end": "2026-11-20T07:00:00.000Z",
-      "priceEurMWh": 94.416,
+      "priceEurMWh": 100.1736,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T07:00:00.000Z",
       "end": "2026-11-20T08:00:00.000Z",
-      "priceEurMWh": 103.6278,
+      "priceEurMWh": 115.7712,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T08:00:00.000Z",
       "end": "2026-11-20T09:00:00.000Z",
-      "priceEurMWh": 98.5737,
+      "priceEurMWh": 112.7193,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T09:00:00.000Z",
       "end": "2026-11-20T10:00:00.000Z",
-      "priceEurMWh": 86.4974,
+      "priceEurMWh": 109.0347,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T10:00:00.000Z",
       "end": "2026-11-20T11:00:00.000Z",
-      "priceEurMWh": 81.4829,
+      "priceEurMWh": 106.5892,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T11:00:00.000Z",
       "end": "2026-11-20T12:00:00.000Z",
-      "priceEurMWh": 111.4828,
+      "priceEurMWh": 148.8756,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T12:00:00.000Z",
       "end": "2026-11-20T13:00:00.000Z",
-      "priceEurMWh": 109.4844,
+      "priceEurMWh": 148.748,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T13:00:00.000Z",
       "end": "2026-11-20T14:00:00.000Z",
-      "priceEurMWh": 102.946,
+      "priceEurMWh": 146.0826,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T14:00:00.000Z",
       "end": "2026-11-20T15:00:00.000Z",
-      "priceEurMWh": 108.1158,
+      "priceEurMWh": 141.1155,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T15:00:00.000Z",
       "end": "2026-11-20T16:00:00.000Z",
-      "priceEurMWh": 102.7982,
+      "priceEurMWh": 129.5042,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T16:00:00.000Z",
       "end": "2026-11-20T17:00:00.000Z",
-      "priceEurMWh": 84.3237,
+      "priceEurMWh": 109.4461,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T17:00:00.000Z",
       "end": "2026-11-20T18:00:00.000Z",
-      "priceEurMWh": 62.431,
+      "priceEurMWh": 87.598,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T18:00:00.000Z",
       "end": "2026-11-20T19:00:00.000Z",
-      "priceEurMWh": 41.1286,
+      "priceEurMWh": 61.9312,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T19:00:00.000Z",
       "end": "2026-11-20T20:00:00.000Z",
-      "priceEurMWh": 34.2173,
+      "priceEurMWh": 41.1208,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T20:00:00.000Z",
       "end": "2026-11-20T21:00:00.000Z",
-      "priceEurMWh": 25.2572,
+      "priceEurMWh": 28.0156,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T21:00:00.000Z",
       "end": "2026-11-20T22:00:00.000Z",
-      "priceEurMWh": 20.986,
+      "priceEurMWh": 21.0446,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T22:00:00.000Z",
       "end": "2026-11-20T23:00:00.000Z",
-      "priceEurMWh": 13.695,
+      "priceEurMWh": 11.6225,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-20T23:00:00.000Z",
       "end": "2026-11-21T00:00:00.000Z",
-      "priceEurMWh": 11.4961,
+      "priceEurMWh": 12.4999,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T00:00:00.000Z",
       "end": "2026-11-21T01:00:00.000Z",
-      "priceEurMWh": 24.4868,
+      "priceEurMWh": 28.6959,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T01:00:00.000Z",
       "end": "2026-11-21T02:00:00.000Z",
-      "priceEurMWh": 23.5741,
+      "priceEurMWh": 25.7319,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T02:00:00.000Z",
       "end": "2026-11-21T03:00:00.000Z",
-      "priceEurMWh": 23.4909,
+      "priceEurMWh": 26.387,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T03:00:00.000Z",
       "end": "2026-11-21T04:00:00.000Z",
-      "priceEurMWh": 25.8194,
+      "priceEurMWh": 29.6721,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T04:00:00.000Z",
       "end": "2026-11-21T05:00:00.000Z",
-      "priceEurMWh": 27.3286,
+      "priceEurMWh": 29.6084,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T05:00:00.000Z",
       "end": "2026-11-21T06:00:00.000Z",
-      "priceEurMWh": 25.9122,
+      "priceEurMWh": 21.5659,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T06:00:00.000Z",
       "end": "2026-11-21T07:00:00.000Z",
-      "priceEurMWh": 33.6823,
+      "priceEurMWh": 21.0651,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T07:00:00.000Z",
       "end": "2026-11-21T08:00:00.000Z",
-      "priceEurMWh": 39.0441,
+      "priceEurMWh": 26.4687,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T08:00:00.000Z",
       "end": "2026-11-21T09:00:00.000Z",
-      "priceEurMWh": 38.0961,
+      "priceEurMWh": 22.5414,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T09:00:00.000Z",
       "end": "2026-11-21T10:00:00.000Z",
-      "priceEurMWh": 30.6003,
+      "priceEurMWh": 21.6842,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T10:00:00.000Z",
       "end": "2026-11-21T11:00:00.000Z",
-      "priceEurMWh": 33.0223,
+      "priceEurMWh": 21.8443,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T11:00:00.000Z",
       "end": "2026-11-21T12:00:00.000Z",
-      "priceEurMWh": 32.9396,
+      "priceEurMWh": 20.7781,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T12:00:00.000Z",
       "end": "2026-11-21T13:00:00.000Z",
-      "priceEurMWh": 39.2908,
+      "priceEurMWh": 13.8851,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T13:00:00.000Z",
       "end": "2026-11-21T14:00:00.000Z",
-      "priceEurMWh": 39.465,
+      "priceEurMWh": 13.6307,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T14:00:00.000Z",
       "end": "2026-11-21T15:00:00.000Z",
-      "priceEurMWh": 47.9719,
+      "priceEurMWh": 26.3287,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T15:00:00.000Z",
       "end": "2026-11-21T16:00:00.000Z",
-      "priceEurMWh": 41.3608,
+      "priceEurMWh": 44.8859,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T16:00:00.000Z",
       "end": "2026-11-21T17:00:00.000Z",
-      "priceEurMWh": 41.5004,
+      "priceEurMWh": 48.9032,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T17:00:00.000Z",
       "end": "2026-11-21T18:00:00.000Z",
-      "priceEurMWh": 40.7976,
+      "priceEurMWh": 49.9274,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T18:00:00.000Z",
       "end": "2026-11-21T19:00:00.000Z",
-      "priceEurMWh": 34.2076,
+      "priceEurMWh": 42.3454,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T19:00:00.000Z",
       "end": "2026-11-21T20:00:00.000Z",
-      "priceEurMWh": 28.2951,
+      "priceEurMWh": 31.6415,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T20:00:00.000Z",
       "end": "2026-11-21T21:00:00.000Z",
-      "priceEurMWh": 26.2317,
+      "priceEurMWh": 30.5368,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T21:00:00.000Z",
       "end": "2026-11-21T22:00:00.000Z",
-      "priceEurMWh": 23.1614,
+      "priceEurMWh": 27.8016,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T22:00:00.000Z",
       "end": "2026-11-21T23:00:00.000Z",
-      "priceEurMWh": 16.4204,
+      "priceEurMWh": 22.051,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-21T23:00:00.000Z",
       "end": "2026-11-22T00:00:00.000Z",
-      "priceEurMWh": 15.0839,
+      "priceEurMWh": 18.6343,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T00:00:00.000Z",
       "end": "2026-11-22T01:00:00.000Z",
-      "priceEurMWh": 17.6722,
+      "priceEurMWh": 17.6614,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T01:00:00.000Z",
       "end": "2026-11-22T02:00:00.000Z",
-      "priceEurMWh": 17.0938,
+      "priceEurMWh": 18.7621,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T02:00:00.000Z",
       "end": "2026-11-22T03:00:00.000Z",
-      "priceEurMWh": 18.5734,
+      "priceEurMWh": 20.4599,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T03:00:00.000Z",
       "end": "2026-11-22T04:00:00.000Z",
-      "priceEurMWh": 19.4926,
+      "priceEurMWh": 21.6603,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T04:00:00.000Z",
       "end": "2026-11-22T05:00:00.000Z",
-      "priceEurMWh": 22.6526,
+      "priceEurMWh": 19.6186,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T05:00:00.000Z",
       "end": "2026-11-22T06:00:00.000Z",
-      "priceEurMWh": 19.1846,
+      "priceEurMWh": 18.8033,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T06:00:00.000Z",
       "end": "2026-11-22T07:00:00.000Z",
-      "priceEurMWh": 22.2038,
+      "priceEurMWh": 23.3596,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T07:00:00.000Z",
       "end": "2026-11-22T08:00:00.000Z",
-      "priceEurMWh": 27.3397,
+      "priceEurMWh": 31.6312,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T08:00:00.000Z",
       "end": "2026-11-22T09:00:00.000Z",
-      "priceEurMWh": 29.0334,
+      "priceEurMWh": 31.5119,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T09:00:00.000Z",
       "end": "2026-11-22T10:00:00.000Z",
-      "priceEurMWh": 27.2676,
+      "priceEurMWh": 31.3622,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T10:00:00.000Z",
       "end": "2026-11-22T11:00:00.000Z",
-      "priceEurMWh": 24.4388,
+      "priceEurMWh": 25.0953,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T11:00:00.000Z",
       "end": "2026-11-22T12:00:00.000Z",
-      "priceEurMWh": 29.1578,
+      "priceEurMWh": 38.9692,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T12:00:00.000Z",
       "end": "2026-11-22T13:00:00.000Z",
-      "priceEurMWh": 29.161,
+      "priceEurMWh": 35.123,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T13:00:00.000Z",
       "end": "2026-11-22T14:00:00.000Z",
-      "priceEurMWh": 26.3379,
+      "priceEurMWh": 36.2858,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T14:00:00.000Z",
       "end": "2026-11-22T15:00:00.000Z",
-      "priceEurMWh": 40.6236,
+      "priceEurMWh": 43.6691,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T15:00:00.000Z",
       "end": "2026-11-22T16:00:00.000Z",
-      "priceEurMWh": 49.2632,
+      "priceEurMWh": 53.6989,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T16:00:00.000Z",
       "end": "2026-11-22T17:00:00.000Z",
-      "priceEurMWh": 56.8416,
+      "priceEurMWh": 55.9831,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T17:00:00.000Z",
       "end": "2026-11-22T18:00:00.000Z",
-      "priceEurMWh": 58.962,
+      "priceEurMWh": 55.7264,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T18:00:00.000Z",
       "end": "2026-11-22T19:00:00.000Z",
-      "priceEurMWh": 54.647,
+      "priceEurMWh": 54.6759,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T19:00:00.000Z",
       "end": "2026-11-22T20:00:00.000Z",
-      "priceEurMWh": 50.5076,
+      "priceEurMWh": 49.6912,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T20:00:00.000Z",
       "end": "2026-11-22T21:00:00.000Z",
-      "priceEurMWh": 47.2617,
+      "priceEurMWh": 45.8237,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T21:00:00.000Z",
       "end": "2026-11-22T22:00:00.000Z",
-      "priceEurMWh": 41.5739,
+      "priceEurMWh": 43.7515,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T22:00:00.000Z",
       "end": "2026-11-22T23:00:00.000Z",
-      "priceEurMWh": 36.7271,
+      "priceEurMWh": 37.1855,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-22T23:00:00.000Z",
       "end": "2026-11-23T00:00:00.000Z",
-      "priceEurMWh": 33.5301,
+      "priceEurMWh": 35.995,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T00:00:00.000Z",
       "end": "2026-11-23T01:00:00.000Z",
-      "priceEurMWh": 28.9048,
+      "priceEurMWh": 30.5405,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T01:00:00.000Z",
       "end": "2026-11-23T02:00:00.000Z",
-      "priceEurMWh": 31.23,
+      "priceEurMWh": 34.4003,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T02:00:00.000Z",
       "end": "2026-11-23T03:00:00.000Z",
-      "priceEurMWh": 31.6361,
+      "priceEurMWh": 34.6081,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T03:00:00.000Z",
       "end": "2026-11-23T04:00:00.000Z",
-      "priceEurMWh": 34.4779,
+      "priceEurMWh": 40.5048,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T04:00:00.000Z",
       "end": "2026-11-23T05:00:00.000Z",
-      "priceEurMWh": 37.7169,
+      "priceEurMWh": 40.6303,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T05:00:00.000Z",
       "end": "2026-11-23T06:00:00.000Z",
-      "priceEurMWh": 41.0212,
+      "priceEurMWh": 52.0399,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T06:00:00.000Z",
       "end": "2026-11-23T07:00:00.000Z",
-      "priceEurMWh": 53.8891,
+      "priceEurMWh": 65.6432,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T07:00:00.000Z",
       "end": "2026-11-23T08:00:00.000Z",
-      "priceEurMWh": 55.9578,
+      "priceEurMWh": 72.0828,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T08:00:00.000Z",
       "end": "2026-11-23T09:00:00.000Z",
-      "priceEurMWh": 52.2768,
+      "priceEurMWh": 65.5908,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T09:00:00.000Z",
       "end": "2026-11-23T10:00:00.000Z",
-      "priceEurMWh": 45.9886,
+      "priceEurMWh": 55.0147,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T10:00:00.000Z",
       "end": "2026-11-23T11:00:00.000Z",
-      "priceEurMWh": 36.9173,
+      "priceEurMWh": 48.0497,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T11:00:00.000Z",
       "end": "2026-11-23T12:00:00.000Z",
-      "priceEurMWh": 32.8238,
+      "priceEurMWh": 36.975,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T12:00:00.000Z",
       "end": "2026-11-23T13:00:00.000Z",
-      "priceEurMWh": 26.8333,
+      "priceEurMWh": 34.569,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T13:00:00.000Z",
       "end": "2026-11-23T14:00:00.000Z",
-      "priceEurMWh": 31.2145,
+      "priceEurMWh": 41.4434,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T14:00:00.000Z",
       "end": "2026-11-23T15:00:00.000Z",
-      "priceEurMWh": 42.5758,
+      "priceEurMWh": 49.6832,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T15:00:00.000Z",
       "end": "2026-11-23T16:00:00.000Z",
-      "priceEurMWh": 47.2024,
+      "priceEurMWh": 54.1311,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T16:00:00.000Z",
       "end": "2026-11-23T17:00:00.000Z",
-      "priceEurMWh": 48.7907,
+      "priceEurMWh": 56.9398,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T17:00:00.000Z",
       "end": "2026-11-23T18:00:00.000Z",
-      "priceEurMWh": 50.0936,
+      "priceEurMWh": 63.6291,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T18:00:00.000Z",
       "end": "2026-11-23T19:00:00.000Z",
-      "priceEurMWh": 46.4341,
+      "priceEurMWh": 57.1436,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T19:00:00.000Z",
       "end": "2026-11-23T20:00:00.000Z",
-      "priceEurMWh": 36.7816,
+      "priceEurMWh": 46.6819,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T20:00:00.000Z",
       "end": "2026-11-23T21:00:00.000Z",
-      "priceEurMWh": 35.2147,
+      "priceEurMWh": 39.4363,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T21:00:00.000Z",
       "end": "2026-11-23T22:00:00.000Z",
-      "priceEurMWh": 29.3137,
+      "priceEurMWh": 34.3321,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T22:00:00.000Z",
       "end": "2026-11-23T23:00:00.000Z",
-      "priceEurMWh": 24.5971,
+      "priceEurMWh": 33.6351,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     },
     {
       "start": "2026-11-23T23:00:00.000Z",
       "end": "2026-11-24T00:00:00.000Z",
-      "priceEurMWh": 24.2167,
+      "priceEurMWh": 30.6826,
       "type": "forecast",
       "resolution": "PT60M",
       "source": "nordpool-predict-fi",
-      "updatedAt": "2026-11-16T12:07:49.356Z"
+      "updatedAt": "2026-11-16T22:35:10.063Z"
     }
   ]
 }
